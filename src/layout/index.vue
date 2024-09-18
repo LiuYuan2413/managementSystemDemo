@@ -18,9 +18,11 @@
 import { provide, ref } from 'vue'
 import sidebar from './sidebar/index.vue';
 import topbar from './header/index.vue';
+
 const collapse = ref<boolean>(false); // 控制 Sider 折叠状态
 // 注入 collapse 状态，以便 header 组件可以访问并修改
 provide('collapse', collapse);
+
 </script>
 <style scoped>
 .layout {
